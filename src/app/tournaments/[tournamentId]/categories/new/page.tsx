@@ -25,11 +25,11 @@ const categorySchema = z.object({
 
 type CategoryFormValues = z.infer<typeof categorySchema>;
 
-export default function NewCategoryPage({ params }: { params: { id: string } }) {
+export default function NewCategoryPage({ params }: { params: { tournamentId: string } }) {
   const router = useRouter();
   const { user } = useAuth();
   const [loading, setLoading] = useState(false);
-  const tournamentId = params.id;
+  const tournamentId = params.tournamentId;
 
   const { register, handleSubmit, formState: { errors } } = useForm<CategoryFormValues>({
     resolver: zodResolver(categorySchema),
