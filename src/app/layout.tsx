@@ -8,8 +8,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ScoreHub - Tournament Management for Padel",
-  description: "Comprehensive tournament management system for padel clubs",
+  title: "ScoreHub - Padel Tournament Management",
+  description: "Streamline your padel tournament management with ScoreHub",
 };
 
 export default function RootLayout({
