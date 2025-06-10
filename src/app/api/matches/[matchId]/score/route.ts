@@ -129,7 +129,7 @@ async function updateMatchResults(matchId: string, winnerId: string) {
     
     // If match is part of a pool, update pool standings
     if (match.pool_id && match.pool) {
-      let standings = match.pool.standings || {};
+      const standings = match.pool.standings || {};
       
       // Initialize standings if they don't exist for either team
       if (!standings[match.team1_id]) {
