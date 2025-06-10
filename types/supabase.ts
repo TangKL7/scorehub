@@ -12,4 +12,4 @@ export type Tables = {
 export type DbResponse<T> = {
   data: T | null
   error: Error | null
-} 
+}
